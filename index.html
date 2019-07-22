@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Raspberry Pi Blog</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <header class="header">
+            <a class="header-logo-link">
+                <img src="images/logo.png" alt="Raspberry Pi Logo" class="logo">
+            </a>
+            <h1 class="header-title">Raspberry Pi Blog</h1>
+            <div class="header-search">
+                <a href="#">
+                    <i class="fas fa-search fa-3x"></i>
+                </a>
+            </div>
+            <ul class="header-socials">
+                <li class="social-item">
+                    <a href="#">
+                        <i class="fab fa-instagram fa-3x"></i>
+                    </a> 
+                </li>
+                <li class="social-item">
+                    <a href="#">
+                        <i class="fab fa-twitter-square fa-3x"></i>
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a href="#">
+                        <i class="fab fa-google-plus-square fa-3x"></i>
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a href="#">
+                        <i class="fab fa-github-square fa-3x"></i>
+                    </a>
+                </li>
+            </ul>
+            <nav class="header-nav-mobile">
+                <input class="header-menu-button" id="hamburger" type="checkbox" />
+                <label for="hamburger">
+                    <i class="fa fa-bars fa-3x"></i>
+                </label>
+                <ul class="header-nav-list">
+                    <li>
+                        <a class="header-nav-item" href="#"> Home </a>
+                    </li>
+                    <li>
+                        <a class="header-nav-item" href="#"> About </a>
+                    </li>
+                    <li>
+                        <a class="header-nav-item" href="#"> Contacts </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="posts-container">
+                <article class="post">
+                    <div class="post-cover">
+                        <img src="images/raspberry-pi-4.jpg" alt="" />
+                    </div>
+                    <div class="post-content">
+                        <h2 class="post-title">RASPBERRY PI 4 THERMALS AND FAN SHIM</h2>
+                        <h5 class="post-date">June 29, 2019</h5>
+                        <h5 class="post-comments">
+                            <i class="fa fa-comment"></i>
+                            <span>11</span>
+                        </h5>
+                        <p class="post-description">
+                            With each generation, the Raspberry Pi packs greater performance into a same-sized package,
+                            and the Raspberry Pi 4 is one of the most significant steps up so far.
+                            The Raspberry Pi 3 was known to run hot, but the Raspberry Pi 3 B+ dramatically
+                            improved thermal performance with a metal heat-spreader on the System-on-Chip (SoC),
+                            and much better thermal dissipation through the PCB.
+                            The Pi 4's higher performance means that some of that heat creeps back.
+                        </p>
+                    </div>
+                </article>
+                <article class="post">
+                        <div class="post-cover">
+                            <img src="images/microdot-phat.gif" alt="" />
+                        </div>
+                        <div class="post-content">
+                            <h2 class="post-title">MICRO DOT PHAT</h2>
+                            <h5 class="post-date">July 21, 2016</h5>
+                            <h5 class="post-comments">
+                                <i class="fa fa-comment"></i>
+                                <span>17</span>
+                            </h5>
+                            <p class="post-description">
+                                Micro Dot pHAT is an unashamedly old school LED matrix display board,
+                                with up to 30x7 pixels, using the Lite-On LTP-305 matrices. It's perfect
+                                for building a retro scrolling message display or a tiny 30 band spectrum analyser.
+                                We were first tipped off about these gorgeous little retro displays when we stumbled across a Python
+                                library for driving the similar Osram SLx2016 4-digit displays, written by Andy Cui. For quite a while,
+                                we've been selling the tiny little 7-segment bubble displays (QDSP6064) that were used in the HP 3x-series calculators
+                            </p>
+                        </div>
+                </article>
+                <article class="post">
+                        <div class="post-cover">
+                            <img src="images/apa102-4.jpg" alt="" />
+                        </div>
+                        <div class="post-content">
+                            <h2 class="post-title">APA102 VARIANTS</h2>
+                            <h5 class="post-date">September 6, 2016</h5>
+                            <h5 class="post-comments">
+                                <i class="fa fa-comment"></i>
+                                <span>2</span>
+                            </h5>
+                            <p class="post-description">
+                                We use the APA102 RGB LED pixels on both our Blinkt! and Mote boards now, and recently 
+                                we came across an interesting quirk when we switched to a new batch of APA102 packages.
+                                The first batch of our Blinkt! boards (including the prototype boards, with which
+                                the software library was produced) were assembled with the original batch (batch 1 from here on in).
+                                Once these ran out, we switched to the newer batch (batch 2 from here on in) and didn't really
+                                think much of it; to all intents and purposes they looked identical.
+                            </p>
+                        </div>
+                </article>
+                <article class="post">
+                        <div class="post-cover">
+                            <img src="images/bearables-blog-7.jpg" alt="" />
+                        </div>
+                        <div class="post-content">
+                            <h2 class="post-title">BEARABLES</h2>
+                            <h5 class="post-date">November 10, 2017</h5>
+                            <h5 class="post-comments">
+                                <i class="fa fa-comment"></i>
+                                <span>4</span>
+                            </h5>
+                            <p class="post-description">
+                                Bearables is a range of woodland-themed wearable LED badges and sensors. Wear the badges on their own,
+                                or connect them to one of the sensors with conductive thread to bring them to life.
+                                Designed for kids and grown-up kids alike! Bearables badges are powered by a little coin cell battery (CR2032),
+                                and should run for 3-4 days continuously. They have 12 coloured LEDs that flash in 12 different light patterns.
+                                There's just one multifunctional button that changes the pattern, puts your badge to sleep or wakes
+                                it from sleep, and enables trigger mode (more on that later) 
+                            </p>
+                        </div>
+                </article>
+                <article class="post">
+                        <div class="post-cover">
+                            <img src="images/inky-phat-shop-1-1.jpg" alt="" />
+                        </div>
+                        <div class="post-content">
+                            <h2 class="post-title">INKY PHAT AND E-PAPER</h2>
+                            <h5 class="post-date">January 17, 2018</h5>
+                            <h5 class="post-comments">
+                                <i class="fa fa-comment"></i>
+                                <span>0</span>
+                            </h5>
+                            <p class="post-description">
+                                Here's the next in the series - how the display works on our Inky pHAT and on other devices like
+                                popular book readers, smart watches, supermarket labels, and whatnot. Warning: this is not a very
+                                technical post. If you want technical descriptions, there are many many of them on the internet.
+                                Different displays may have the electrodes in different places, and have different "biggest" particles,
+                                so the colour order, or what reacts to pushes and pulls might be different. The original idea for the displays
+                                was to have coloured balls that were black on one side, and white on the other.
+                            </p>
+                        </div>
+                </article>
+                <article class="post">
+                        <div class="post-cover">
+                            <img src="images/TinyFPGA_Ax_1_3_of_3_1024x1024.jpg" alt="" />
+                        </div>
+                        <div class="post-content">
+                            <h2 class="post-title">WHAT *IS* FPGA?</h2>
+                            <h5 class="post-date">December 11, 2018</h5>
+                            <h5 class="post-comments">
+                                <i class="fa fa-comment"></i>
+                                <span>15</span>
+                            </h5>
+                        
+                            <p class="post-description">
+                                Occasionally something will come into stock that bewilders me - the range of things we sell
+                                is so large that I'll inevitably have to look stuff up sometimes. This month has been no exception.
+                                On a FPGA digital logic chip, you haven't bought a microwave or a TV. 
+                                You have bought a small appliance that doesn't know what it is yet! You can decide what type it is, and what it does!
+                                People who know about these things call them JTAG connections. It's the initials of a group who made this the
+                                standard way of checking whether all your pins are where they should be and doing what they should be doing.
+                            </p>
+                        </div>
+                </article>
+            </section>
+        </main>
+        <aside>
+            <div class="author-info">
+                <img class="author-avatar" src="images/myphoto.jpg">
+                <h3 class="author-name">Didyk Yurii</p>
+                <h5 class="author-about">Software engineering student</p>
+            </div>
+            <div class="aside-bottom">
+            <ul class="author-socials">
+                <li class="author-social-item">
+                    <a href="#">
+                        <i class="fab fa-facebook-f fa-2x"></i>
+                    </a>
+                </li>
+                <li class="author-social-item">
+                    <a href="#">
+                        <i class="fab fa-linkedin-in fa-2x"></i>
+                    </a>
+                </li>
+                <li class="author-social-item">
+                    <a href="#">
+                        <i class="fab fa-github-alt fa-2x"></i>
+                    </a>
+                </li>
+                <li class="author-social-item">
+                    <a href="#">
+                        <i class="fab fa-twitter fa-2x"></i>
+                    </a>
+                </li>
+
+            </ul>
+            <div class="subscribe-section">
+                <h3 class="subscribe-title">Want to subscribe?</h3>
+                <input type="text" placeholder="Name" class="subscribe-input">
+                <input type="text" placeholder="Email" class="subscribe-input">
+                <button class="subscribe-button">Subscribe</button>
+            </div>
+            <div class="aside-search">
+                <input type="text" placeholder="Search" class="search-input">
+                <button class="search-button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <ul class="tags-list">
+                <li class="tag-item">
+                    <a href="#" class="tag-link">Tech</a>
+                </li>
+                <li class="tag-item">
+                    <a href="#" class="tag-link">ARM</a>
+                </li>
+                <li class="tag-item">
+                    <a href="#" class="tag-link">Raspberry Pi</a>
+                </li>
+                <li class="tag-item">
+                    <a href="#" class="tag-link">IoT</a>
+                </li>
+                <li class="tag-item">
+                    <a href="#" class="tag-link">Raspbian</a>
+                </li>
+                <li class="tag-item">
+                    <a href="#" class="tag-link">SBC</a>
+                </li>
+                <li class="tag-item">
+                    <a href="#" class="tag-link">Embedded</a>
+                </li>
+                <li class="tag-item">
+                    <a href="#" class="tag-link">DIY</a>
+                </li>
+            </ul>
+            <div class="aside-comments">
+                <h3 class="comments-title">Recent comments</h3>
+                <ul class="aside-comments-list">
+                    <li class="aside-comment-item">
+                        <img src="images/user2.svg" alt="" class="comment-author-avatar">
+                        <div class="comment-column">
+                            <h4 class="comment-author-name">Alisa Batista</h4>
+                            <p class="comment-body">Really not understanding why the fuses are like that, unless its the one in the plug, but even so!</p>
+                            <span class="comment-date">
+                                <i class="far fa-calendar-alt"></i>
+                                <p>5 min ago</p>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="aside-comment-item">
+                        <img src="images/user1.svg" alt="" class="comment-author-avatar">
+                        <div class="comment-column">
+                            <h4 class="comment-author-name">Josh Windsmoke</h3>
+                            <p class="comment-body">The I2C connections from the Pi GPIOs 2&3 to the display are only required on the very early Model A and Model B.</p>
+                            <span class="comment-date">
+                                <i class="far fa-calendar-alt"></i>
+                                <p>17 min ago</p>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="aside-comment-item">
+                        <img src="images/user3.svg" alt="" class="comment-author-avatar">
+                        <div class="comment-column">
+                            <h4 class="comment-author-name">Sam Robinson</h3>
+                            <p class="comment-body">Nice looking project! It is interesting that they only need a power cable</p>
+                            <span class="comment-date">
+                                <i class="far fa-calendar-alt"></i>
+                                <p>37 min ago</p>
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </aside>
+        <footer>
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="pencill-blog" class="logo">
+                <h1 class="footer-title">Raspberry Pi Blog</h1>
+            </div>
+            <div class="footer-contacts">
+                <h2 class="footer-contacts-title">Contacts</h2>
+                <ul class="footer-contacts-list">
+                    <li class="footer-contacts-item">ynix.comm@gmai.com</li>
+                    <li class="footer-contacts-item">+380995611261</li>
+                </ul>
+            </div>
+            <div class="footer-socials">
+                <h2 class="footer-socials-title">Follow</h2>
+                <ul class="footer-socials-list">
+                    <li class="footer-social-item">
+                        <a href="#">
+                            <i class="fab fa-instagram fa-2x"></i>
+                        </a> 
+                    </li>
+                    <li class="footer-social-item">
+                        <a href="#">
+                            <i class="fab fa-twitter-square fa-2x"></i>
+                                </a>
+                    </li>
+                    <li class="footer-social-item">
+                        <a href="#">
+                            <i class="fab fa-google-plus-square fa-2x"></i>
+                        </a>
+                    </li>
+                    <li class="footer-social-item">
+                        <a href="#">
+                            <i class="fab fa-github-square fa-2x"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+
+    </body>
+</html>
