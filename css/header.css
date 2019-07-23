@@ -1,6 +1,6 @@
 .header {
     margin: 10px;
-    box-shadow: 0 4px 2px -2px rgb(201, 75, 106);
+    box-shadow: 0 4px 2px -2px #be0940;
     margin-bottom: 20px;
 }
 .social-item {
@@ -75,6 +75,7 @@ label {
     header {
         grid-area: header;
         max-width: 1200px;
+        box-shadow: 0 4px 2px -2px #be0940;
         width: 100%;
         display: grid;
         grid-template-areas: 
