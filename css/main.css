@@ -19,15 +19,6 @@ html{
     font-weight: 300;
     font-size: calc(12px + 0.35vw);
 }
-/* header {
-    grid-area: header;
-    max-width: 1200px;
-    width: 100%;
-    display: grid;
-    grid-template-areas: 
-    "logo  title search socials "
-    "logo  title   .    nav";
-} */
 
 ul,
 li{
@@ -55,10 +46,6 @@ main {
     grid-area: main;
 }
 
-/* aside{
-    grid-area: aside;
-} */
-
 footer{
     grid-area: footer;
 }
@@ -77,7 +64,6 @@ footer{
     justify-content: center;
     align-self: center;
     grid-area: title;
-    /* align-content: center; */
 }
 .header-nav-mobile a:hover{
     box-shadow: 0 4px 2px -2px gray;
@@ -149,14 +135,6 @@ section {
     width: 100%;
 }
 
-/* body{
-    display: grid;
-    grid-template-areas: "header header header header header"
-    "main main main main aside"
-    "footer footer footer footer footer";
-    align-content: center;
-} */
-
 .post{
     display: grid;
     grid-template-columns: 1fr;
@@ -186,10 +164,7 @@ aside{
 }
 .author-socials{
     display: flex;
-    /* margin: 2rem; */
     margin-bottom: 1.1rem;
-    /* margin-top: 1.1rem; */
-    /* padding: .7rem; */
     justify-content: center;
 }
 
@@ -255,6 +230,7 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
     transition: all 0.4s ease;
 }
 
+
 .subscribe-input{
     width: 100%;
     margin-bottom: 0.4rem;
@@ -271,7 +247,6 @@ button, html input[type="button"], input[type="reset"], input[type="submit"] {
 }
 
 aside{
-    max-width: 17rem;
     padding: 1.1rem;
     margin:1.1rem;
 }
@@ -372,7 +347,6 @@ footer{
 .footer-contacts{
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
 }
 .footer-contacts-title{
     margin-bottom: .9rem;
@@ -408,7 +382,6 @@ footer{
     color:#be0940;
     background-color: transparent;
     font-size: 2rem;
-    /* align-self: center; */
 }
 
 .footer-socials{
@@ -550,6 +523,10 @@ footer{
         opacity: .65;
     }
 
+    aside{
+        max-width: 17rem;
+    }
+
     body{
         display: grid;
         grid-template-areas: "header header header header header"
@@ -558,7 +535,9 @@ footer{
         "footer footer footer footer footer";
         align-content: center;
     }
-
+    .posts-container{
+        margin-right: 1rem;
+    }
     .aside-author{
         grid-area: aside-top;
     }
@@ -571,23 +550,19 @@ footer{
 @media screen and (max-width: 768px){
     header {
         grid-area: header;
-        max-width: 1200px;
-        width: 100%;
+        width: auto;
         display: grid;
         grid-template-areas: 
         "nav logo search";
     }
 
+    aside{
+        max-width: 30rem;
+    }
+
     .header-socials,
     .header-title{
         display: none !important;
-    }
-
-    aside{
-        display: block;
-        max-width: 75%;
-        margin-left: auto;
-        margin-right: auto;
     }
 
     .header-nav-mobile{
@@ -659,17 +634,15 @@ footer{
     
     .header-nav-item {
         grid-area: nav;
-        /* display: flex;
-        align-items: center;
-        height: 3rem; */
     }
 
-    .aside-author{
+    .aside-top{
         grid-area: aside-top;
     }
 
     .aside-bottom{
         grid-area: aside-bottom;
+        margin-bottom: 1rem !important;
     }
 
     main{
@@ -693,6 +666,18 @@ footer{
         "footer";
         align-content: center;
     }
+
+    .aside-top,
+    .aside-bottom{
+        display: inline-block;
+        zoom: 1;
+        margin: 0 auto;
+    }
+
+    .posts-container{
+        margin-right: 2rem;
+    }
+
 }
 
 
